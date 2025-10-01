@@ -2,105 +2,199 @@
 <html lang="en">
 	
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="a resume for Duke">
 	<meta name="author" content="Duke Reddington">	
-	<title>Duke the Cat's Resume</title>		
-	<link rel="stylesheet" href="css/style.css">
-</head>
-		
+	<title>Duke the Cat's Resume</title>	
 
-<body>		
+	<!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- END LOADING BOOTSTRAP CSS -->
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+		
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom" aria-label="Primary">
+  <div class="container">
+    <a class="navbar-brand" href="#top">
+      <img src="images/dukelogo.png" alt="Duke logo" class="d-inline-block align-text-top">
+    </a> <!-- LOGO -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+            aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> <!-- NAV BUTTON -->
+
+    <div id="navMain" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#facts">Fun Facts</a></li>
+      </ul>
+    </div> <!-- END NAV COLLAPSE -->
+  </div> <!-- END NAV BAR CONTAINER -->
+</nav> <!-- END NAV -->
+
+		
 	<header class="banner">
     	<h1 class="section-title">Duke the Cat</h1>   
   </header>		
 
 
-<main>
-	<section id="contact">
-		<h3 class="section-title"> Top-Tier Feline Security Agent | Professional Secret Service Operative</h3>
-			<ul>
-				<li> Location: Classified (Undisclosed Safehouse) </li>
-				<li> Contact: Duke’s Handler (Reach via <a href="http://contact.com" target="_blank">Laser Pointer Channel </a> ) </li>
-				<li> Email: dukefelineops.gov(mailto:dukefelineops.gov) </li>
-				<li> LinkedIn: <a href="linkedin.com/in/dukethesecretservicecat" target="_blank">Duke's LinkedIn Account</a> </li>
-			</ul>
-	</section>
+<main class="container my-4" id='top'>
 
-<img src="Duke.jpg" alt="Duke's headshot">
+<div class="row">
+        
+        <div class="col-md-6">
+          <img src="Duke.jpg" alt="Duke's headshot" class="img-fluid">
+        </div> <!-- END DIV HEADSHOT --> 
 
-	<section id="skills">
-		<h2 class="section-title">Skills</h2>
-			<ul>
- 				<li>Stealth & Surveillance: Expert in silent paw patrols and midnight reconnaissance.</li>
- 				<li>Protective Services: Skilled at guarding humans, valuables, and unattended snacks.</li>
- 				<li>Crisis Response: Lightning-fast reflexes in intercepting toy mice, intruders, and laser dots.</li>
- 				<li>Communication: Subtle coded meows, tail flicks, and ear rotations for tactical signaling.</li>
- 				<li>Physical Fitness: Daily training in climbing curtains, leaping onto high ground, and tactical sprints at 3 AM.</li>
- 				<li>Professional Demeanor: Maintains calm under pressure, always landing on all four feet.</li>
- 			</ul>
-	</section>
+        <div class="col-md-6">
+          <section id="contact">
+            <h3 class="section-title"> Top-Tier Feline Security Agent | Professional Secret Service Operative</h3>
+              <ul>
+                <li> Location: Classified (Undisclosed Safehouse) </li>
+                <li> Contact: Duke’s Handler (Reach via <a href="http://contact.com" target="_blank">Laser Pointer Channel </a> ) </li>
+                <li> Email: <a href="mailto:dukefelineops@gov">dukefelineops@gov</a> </li>
+                <li> LinkedIn: <a href="https://linkedin.com/in/dukethesecretservicecat" target="_blank">Duke's LinkedIn Account</a> </li>
+              </ul>
+              <p class="text-end small text-muted mb-0">Last updated: Oct 2025</p>
+          </section>
+        </div> <!-- END CONTACT INFO -->
 
-	<section id="education">
-		<h2 class="section-title">Education</h2>
-			Feline Academy of Secret Service (FASS)
-				<ul>
- 				 <li>Major: Covert Operations & Counter-Espionage</li>
- 				 <li>Minor: Advanced Nap Strategies</li>
- 				 <li>Honors: Purrfect Attendance Award, Top of the Scratching Post</li>
- 				</ul>
+</div> <!-- END ROW HEADSHOT AND CONTACT -->
 
-			MeowQuantico Training Facility
+<div class="row mt-4">
 
-				<ul>
-					<li>Certified in Stealth Prowl Tactics, Tail-to-Tail Combat, and Disguise Techniques (cardboard box specialization).</li>
-				</ul>
-	</section>
+      <div class="col-lg-7">
+        <section id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="justify">
+            <li>Stealth & Surveillance: Expert in silent paw patrols and midnight reconnaissance.</li>
+            <li>Protective Services: Guards humans, valuables, and unattended snacks.</li>
+            <li>Crisis Response: Lightning-fast interception of toy mice, intruders, and laser dots.</li>
+            <li>Communication: Coded meows, tail flicks, and ear rotations for signaling.</li>
+            <li>Physical Fitness: Curtain climbing, high-ground leaps, 3 AM tactical sprints.</li>
+            <li>Professional Demeanor: Calm under pressure; always lands on four feet.</li>
+          </ul>
+        </section>
+      </div> <!-- END SKILLS DIV -->
 
-	<section id="experience">		
-		<h2 class="section-title">Experience</h2>
+		<div class="col-lg-5">
+        <section id="education">
+          <h2 class="section-title">Education</h2>
+          <p><strong>Feline Academy of Secret Service (FASS)</strong>
+            <span class="badge text-bg-secondary">Honors</span>
+          </p>
+          <ul>
+            <li>Major: Covert Operations & Counter-Espionage</li>
+            <li>Minor: Advanced Nap Strategies</li>
+            <li>Honors: Purrfect Attendance; Top of the Scratching Post</li>
+          </ul>
+          <p><strong>MeowQuantico Training Facility</strong></p>
+          <ul>
+            <li>Certified: Stealth Prowl, Tail-to-Tail Combat, Disguise Techniques</li>
+          </ul>
+        </section>
+    </div> <!-- END EDUCATIION DIV -->
+    
+</div> <!-- END ROW SKILLS AND EDUCATION -->
 
 
-				Special Agent, Feline Secret Service, Classified Location | 2018 – Present
 
-				<ul>
- 					<li>Conducted undercover operations inside cardboard forts and laundry 	baskets.</li>
- 					<li>Protected human assets from dangerous strings, bugs, and suspicious vacuum cleaners.</li>
- 					<li>Carried out advanced counter-espionage missions against the neighborhood squirrel syndicate.</li>
- 					<li>Awarded Medal of Honorary Tuna for bravery during a red dot pursuit.</li>
- 				</ul>
- 			
-				Lead Security Officer, Household Division, Domestic Territory | 2016 – 2018
-			
-				<ul>
- 					<li>Maintained 24/7 perimeter control of all windowsills and doorways.</li>
- 					<li>Neutralized threats such as invading moths and unauthorized delivery personnel.</li>
- 					<li>Coordinated nightly briefings (via meowing) to ensure humans remained alert.</li>
- 					<li>Implemented Operation Lap Guard: consistent emotional support during classified cuddle missions.</li>
- 				</ul>
-	</section>
 
-	<section id="facts">
-		<h2 class="section-title">Fun Facts</h2>
-			<ol>
 
-				<li>Can nap for 16 hours a day and still be mission-ready at a moment’s notice.</li>
+<div class="row mt-4">
+	<div class="col-12">
+		<section id="experience">
+  <h2 class="section-title">Experience</h2>
 
-				<li>Once infiltrated a laser pointer cartel and brought peace to the living room.</li>
+  <article class="mb-3">
+    <h3 class="h6">Special Agent, Feline Secret Service — 2018–Present</h3>
+    <ul>
+      <li>Undercover operations in cardboard forts and laundry baskets.</li>
+      <li>Protected human assets from strings, bugs, and vacuum cleaners.</li>
+      <li>Counter-espionage vs. squirrel syndicate.</li>
+      <li>Medal of Honorary Tuna.</li>
+    </ul>
+  </article>
 
-				<li>Known for impeccable fashion sense — always wears a sleek black tuxedo coat.</li>
+  <article>
+    <h3 class="h6">Lead Security Officer, Household Division — 2016–2018</h3>
+    <ul>
+      <li>24/7 perimeter control of windowsills and doorways.</li>
+      <li>Neutralized moths and delivery personnel.</li>
+      <li>Nightly briefings (meowing).</li>
+      <li>Operation Lap Guard: elite cuddle support.</li>
+    </ul>
+  </article>
+</section>
 
-				<li>Has never lost a tail chase, even against his own.</li>
+	</div> <!-- END EXPERIENCE -->
+</div> <!-- END EXPERIENCE DIV -->
 
-				<li>Believes tuna is the true fuel of elite agents.</li>
+ <!-- ROW 5 (Bootstrap accordion = extra feature) -->
+    <section id="facts" class="mt-4">
+      <h2 class="section-title">Fun Facts</h2>
+      <div class="accordion" id="factsAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="factOneHdr">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#factOne" aria-expanded="true" aria-controls="factOne">
+              Operational Readiness
+            </button>
+          </h3>
+          <div id="factOne" class="accordion-collapse collapse show" aria-labelledby="factOneHdr" data-bs-parent="#factsAccordion">
+            <div class="accordion-body">
+              Can nap 16 hours and still be mission-ready at a moment’s notice.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="factTwoHdr">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#factTwo" aria-expanded="false" aria-controls="factTwo">
+              Diplomatic Success
+            </button>
+          </h3>
+          <div id="factTwo" class="accordion-collapse collapse" aria-labelledby="factTwoHdr" data-bs-parent="#factsAccordion">
+            <div class="accordion-body">
+              Once infiltrated a laser pointer cartel and brought peace to the living room.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="factThreeHdr">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#factThree" aria-expanded="false" aria-controls="factThree">
+              Currency Conversion
+            </button>
+          </h3>
+          <div id="factThree" class="accordion-collapse collapse" aria-labelledby="factThreeHdr" data-bs-parent="#factsAccordion">
+            <div class="accordion-body">
+              Can convert &#36; to &euro; in record speed.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<li>Can convert &#36; to &euro; in record speed. </li>
- 			</ol>
- 	</section>
-</main>
+
+
+	</main>
 
 
   	<!-- cite chat here --> 
 
+	<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
 
 </body>
 
